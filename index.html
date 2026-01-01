@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RyV Instalaciones Eléctricas</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <style>
+      body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+      .gantt-scroll::-webkit-scrollbar { height: 8px; width: 8px; }
+      .gantt-scroll::-webkit-scrollbar-track { background: #f1f5f9; }
+      .gantt-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+      .gantt-scroll::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+      @media print {
+        @page { margin: 1cm; size: auto; }
+        nav, aside, header, button, .no-print, .fixed { display: none !important; }
+        html, body, #root, main, .flex, .flex-col, .h-screen, .overflow-hidden, .overflow-auto {
+          display: block !important; position: relative !important; height: auto !important; width: 100% !important; overflow: visible !important; margin: 0 !important; padding: 0 !important; background: white !important;
+        }
+        #printable-area { display: block !important; width: 100% !important; }
+        table { width: 100% !important; border-collapse: collapse !important; }
+        thead { display: table-header-group !important; }
+        tbody { display: table-row-group !important; }
+        tr { page-break-inside: avoid !important; }
+        * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://esm.sh/vite@^7.2.7"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
